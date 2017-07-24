@@ -1,6 +1,5 @@
 package com.pluralsight;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -12,10 +11,7 @@ public class WebDriverDemo {
 		
 		//WebDriver driver = new FirefoxDriver();
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://www.google.com");
-		
-		driver.findElement(By.id("lst-ib"));
-		
+		driver.get("http://www.pluralsight.com");	
 	}
 
 }
