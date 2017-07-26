@@ -54,3 +54,4 @@ RemoteSystemsTempFiles
 .project
 target
 
+*.java
