@@ -23,3 +23,93 @@
 
 System.setProperty("webdriver.gecko.driver", "C:/dev/tools/geckodriver.exe");
 		
+///////////////////////////////////////
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Radio Color Buttons</title>
+</head>
+<body>
+
+	<form>
+		<input type="radio" name="color" value="red" checked>Red<br>
+		<input type="radio" name="color" value="green">Green<br>
+		<input type="radio" name="color" value="blue">Blue
+	</form>
+	
+</body>
+</html>
+
+///////////////////////////////////////
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Checkboxes</title>
+</head>
+<body>
+
+	<form>
+		<input type="checkbox" id="mayoCheckbox" value="mayo"> Mayo<br>
+  		<input type="checkbox" id="lettuceCheckbox" value="lettuce"> Lettuce<br>
+  		<input type="checkbox" id="turkeyCheckbox" value="turkey"> Turkey
+	</form>
+	
+</body>
+</html>
+
+///////////////////////////////////////
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Select Item</title>
+</head>
+<body>
+
+	<form>
+		<select id="select1">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+			<option value="maybe">Maybe</option>
+		</select>
+	</form>
+	
+</body>
+</html>
+
+///////////////////////////////////////
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Table</title>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td>Table 1 Row 1</td>
+			<td>
+				<table>
+					<tr><td>Table 2 Row 1</td></tr>
+					<tr><td>Table 2 Row 2</td></tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	
+</body>
+</html>
+
+///////////////////////////////////////
+
+
+///////////////////////////////////////		
+		
+		
