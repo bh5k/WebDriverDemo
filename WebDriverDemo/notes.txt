@@ -109,7 +109,31 @@ System.setProperty("webdriver.gecko.driver", "C:/dev/tools/geckodriver.exe");
 
 ///////////////////////////////////////
 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Table</title>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td>Table 1 Row 1</td>
+			<td>
+				<table>
+					<tr><td>Table 2 Row 1</td></tr>
+					<tr><td>Table 2 Row 2</td></tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	
+</body>
+</html>
 
 ///////////////////////////////////////		
+
+/html/body/table/tbody/tr/td[2]/table/tbody/tr[2]/td
 		
 		

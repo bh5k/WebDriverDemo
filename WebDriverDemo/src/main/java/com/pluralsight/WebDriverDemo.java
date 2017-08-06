@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,6 +16,8 @@ public class WebDriverDemo {
 		WebElement searchField = driver.findElement(By.id("lst-ib"));
 		searchField.sendKeys("pluralsight");
 		searchField.submit();
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		WebElement imagesLink = driver.findElements(By.linkText("Images")).get(0);
 		imagesLink.click();
