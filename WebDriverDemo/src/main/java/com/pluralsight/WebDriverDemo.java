@@ -1,16 +1,23 @@
 package com.pluralsight;
 
+import java.net.URL;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WebDriverDemo {
 
-	public static void main(String[] args) {
-		WebDriver driver = new ChromeDriver();
+	public static void main(String[] args) throws Exception {
+		//WebDriver driver = new ChromeDriver();
+		WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),
+				new DesiredCapabilities("firefox", "", Platform.VISTA));
+		
 		driver.get("http://www.google.com");
 		
 		WebElement searchField = driver.findElement(By.id("lst-ib"));
