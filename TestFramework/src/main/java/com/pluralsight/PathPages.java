@@ -11,8 +11,13 @@ public class PathPages {
 		Browser.goTo(url);
 	}
 
-	public void goToJavaPath() {
-		Browser.driver.findElement(By.xpath("//div[@id='pathContent']/div[59]/a/div/div[2]")).click();
+	public PathPage getPathPage(String page) {
+		switch (page) {
+		case "Java":
+			return Pages.javaPathPage();
+		}
+		
+		return null;
 	}
 
 	public boolean isAt() {
